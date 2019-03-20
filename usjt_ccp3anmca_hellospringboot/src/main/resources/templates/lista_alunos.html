@@ -16,12 +16,11 @@
 			<h1 class="panel-title">Alunos</h1>
 		</div>
 		<div class="panel-body">
-			<form class="form-inline" method="post" style="margin: 20px 0"
-				th:object="${aluno}" th:action="@{/alunos}">
+			<form class="form-inline" method="post" style="margin: 20px 0"	th:object="${aluno}" th:action="@{/alunos}">
 				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Nome"
-						th:field="*{nome}" /> <input type="text" class="form-control"
-						placeholder="Média" th:field="*{mediaNotas}" />
+					<input type="text" class="form-control" placeholder="Nome" th:field="*{nome}" /> 
+					<input type="text" class="form-control" placeholder="Nota 1" th:field="*{nota1}"/>
+					<input type="text" class="form-control" placeholder="Nota 2" th:field="*{nota2}"/>
 					<button type="submit" class="btn btn-primary">Adicionar</button>
 				</div>
 			</form>

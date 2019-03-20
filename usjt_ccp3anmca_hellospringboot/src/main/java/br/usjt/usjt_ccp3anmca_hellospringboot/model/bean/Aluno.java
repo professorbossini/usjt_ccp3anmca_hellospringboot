@@ -1,4 +1,4 @@
-package br.usjt.usjt_ccp3anmca_hellospringboot.model;
+package br.usjt.usjt_ccp3anmca_hellospringboot.model.bean;
 
 import java.io.Serializable;
 
@@ -16,7 +16,24 @@ public class Aluno implements Serializable{
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nome;
+	private Double nota1;
+	private Double nota2;
 	private Double mediaNotas;
+	
+	//getters/setters
+	
+	public Double getNota1() {
+		return nota1;
+	}
+	public void setNota1(Double nota1) {
+		this.nota1 = nota1;
+	}
+	public Double getNota2() {
+		return nota2;
+	}
+	public void setNota2(Double nota2) {
+		this.nota2 = nota2;
+	}
 	public Long getId() {
 		return id;
 	}
